@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atelier La Fille de la Marquise — Onglerie · Le Houlme</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta name="description" content="Atelier La Fille de la Marquise — Onglerie sur rendez-vous au Houlme (76770). Vernis semi-permanent, pose gel, extensions, nail art. 07 67 86 62 29.">
+<meta property="og:title" content="Atelier La Fille de la Marquise — Onglerie · Le Houlme">
+<meta property="og:description" content="Onglerie sur rendez-vous au Houlme, Seine-Maritime. Vernis, gel, extensions, nail art.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FBF2EC">
+<link rel="canonical" href="https://www.lafilledela-marquise.fr/">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --paper:        #FBF2EC;
+    --paper-2:      #F4E3D7;
+    --paper-3:      #E8C7B5;
+    --ink:          #2A1E18;
+    --ink-2:        #6F584B;
+    --ink-3:        #9F8979;
+    --rule:         #E1CFC0;
+    --rule-strong:  #C9B6A4;
+    --accent:       #B26554;
+    --accent-deep:  #8C4A3C;
+    --accent-soft:  #DDA28C;
+    --serif:        'DM Serif Display', Georgia, serif;
+    --sans:         'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--accent-soft); color: var(--ink); }
+
+  .ph {
+    position: relative;
+    overflow: hidden;
+    background: var(--paper-2);
+  }
+  .ph::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      repeating-linear-gradient(135deg,
+        transparent 0 22px,
+        rgba(42,30,24,0.05) 22px 23px);
+  }
+  .ph::after {
+    content: attr(data-ph);
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 500;
+    background: var(--paper-2);
+    padding: 4px 10px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  /* ─── NAV ─── */
+  nav.site {
+    position: sticky; top: 0; z-index: 50;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 40px;
+    background: rgba(251,242,236,0.92);
+    backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--rule);
+    gap: 24px;
+  }
+  .logo {
+    font-family: var(--serif);
+    font-size: 24px;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+    line-height: 1;
+  }
+  .logo em { font-style: italic; color: var(--accent); }
+  .logo small {
+    display: block;
+    font-family: var(--sans);
+    font-style: normal;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 500;
+    margin-top: 4px;
+  }
+  nav.site ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+  }
+  nav.site ul a {
+    font-size: 13px;
+    color: var(--ink-2);
+    font-weight: 500;
+    padding: 6px 0;
+    transition: color 200ms;
+  }
+  nav.site ul a:hover { color: var(--accent); }
+  .btn-cta {
+    padding: 11px 24px;
+    background: var(--ink);
+    color: var(--paper);
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.02em;
+    transition: background 200ms;
+    display: inline-block;
+  }
+  .btn-cta:hover { background: var(--accent); }
+  .btn-ghost {
+    padding: 11px 24px;
+    background: var(--paper-2);
+    color: var(--ink);
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 999px;
+    border: 1px solid var(--rule);
+    cursor: pointer;
+    transition: background 200ms;
+    display: inline-block;
+  }
+  .btn-ghost:hover { background: var(--paper-3); }
+
+  /* ─── HERO ─── */
+  .hero {
+    padding: 88px 40px 96px;
+    text-align: center;
+    background:
+      radial-gradient(ellipse 60% 50% at 50% 30%, rgba(178,101,84,0.13), transparent 70%),
+      var(--paper);
+  }
+  .hero .eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 28px;
+    display: inline-block;
+    padding: 8px 18px;
+    background: var(--paper-2);
+    border-radius: 999px;
+  }
+  .hero h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(3rem, 6.2vw, 5.4rem);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    max-width: 18ch;
+    margin: 0 auto;
+    color: var(--ink);
+  }
+  .hero h1 em { font-style: italic; color: var(--accent); }
+  .hero .lede {
+    font-size: 18px;
+    color: var(--ink-2);
+    max-width: 40ch;
+    margin: 28px auto 36px;
+    line-height: 1.55;
+  }
+  .hero .ctas { display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+  .hero .ctas a { padding: 14px 28px; font-size: 13px; }
+  .hero .image-row {
+    margin: 64px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr 1fr;
+    gap: 16px;
+    max-width: 1200px;
+  }
+  .hero .image-row .ph { border-radius: 16px; }
+  .hero .image-row .ph.a { aspect-ratio: 3/4; align-self: end; }
+  .hero .image-row .ph.b { aspect-ratio: 4/5; }
+  .hero .image-row .ph.c { aspect-ratio: 3/4; align-self: end; }
+
+  /* ─── BLOCK / SECTION ─── */
+  section.block { padding: 96px 40px; }
+  section.block.alt { background: var(--paper-2); }
+
+  .head-center {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 56px;
+  }
+  .head-center .eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .head-center h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(2.4rem, 4.4vw, 3.6rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+  .head-center h2 em { font-style: italic; color: var(--accent); }
+  .head-center p { color: var(--ink-2); font-size: 17px; max-width: 56ch; margin: 18px auto 0; line-height: 1.6; }
+
+  /* ─── ATELIER (about) ─── */
+  .about-band {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    max-width: 1180px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .about-band .visual {
+    aspect-ratio: 4/5;
+    border-radius: 20px;
+  }
+  .about-band .copy h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(2.2rem, 3.8vw, 3rem);
+    line-height: 1.05;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+  }
+  .about-band .copy h2 em { font-style: italic; color: var(--accent); }
+  .about-band .copy .eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .about-band .copy p {
+    color: var(--ink-2);
+    font-size: 16.5px;
+    margin-bottom: 14px;
+    line-height: 1.7;
+  }
+  .pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 32px;
+  }
+  .pillar {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    padding: 18px;
+  }
+  .pillar h4 {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 20px;
+    color: var(--accent);
+    margin-bottom: 6px;
+    line-height: 1;
+    font-weight: 400;
+  }
+  .pillar p {
+    font-size: 12.5px;
+    color: var(--ink-2);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* ─── PRESTATIONS — featured cards ─── */
+  .pills {
+    display: flex; justify-content: center; gap: 10px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+  .pills span {
+    padding: 8px 16px;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    font-size: 12px;
+    color: var(--ink-2);
+    font-weight: 500;
+  }
+
+  .services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  .service {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 20px;
+    padding: 28px;
+    transition: transform 200ms, border-color 200ms;
+    cursor: pointer;
+    text-align: left;
+  }
+  .service:hover { transform: translateY(-2px); border-color: var(--accent-soft); }
+  .service.is-selected { border-color: var(--accent); background: var(--paper); box-shadow: inset 0 0 0 1px var(--accent); }
+  .service .ph {
+    width: 100%;
+    aspect-ratio: 16/10;
+    border-radius: 12px;
+    margin-bottom: 22px;
+  }
+  .service h3 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 8px;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+  .service p {
+    font-size: 14.5px;
+    color: var(--ink-2);
+    line-height: 1.55;
+    margin-bottom: 18px;
+    min-height: 44px;
+  }
+  .service .footer {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule);
+  }
+  .service .du {
+    font-size: 11.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 500;
+  }
+  .service .px {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 22px;
+    color: var(--accent);
+  }
+
+  /* ─── PRESTATIONS — full list ─── */
+  .menu-list {
+    max-width: 880px;
+    margin: 0 auto;
+  }
+  .menu-row {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 24px;
+    align-items: baseline;
+    padding: 20px 8px;
+    border-bottom: 1px dashed var(--rule-strong);
+    cursor: pointer;
+    transition: background 200ms, padding 200ms;
+    border-radius: 8px;
+  }
+  .menu-row:hover { background: var(--paper); padding-left: 14px; padding-right: 14px; }
+  .menu-row.is-selected { background: var(--paper); padding-left: 14px; padding-right: 14px; border-left: 2px solid var(--accent); }
+  .menu-row .name {
+    font-family: var(--serif);
+    font-size: 21px;
+    line-height: 1.2;
+  }
+  .menu-row .name small {
+    display: block;
+    font-family: var(--sans);
+    font-size: 13.5px;
+    color: var(--ink-2);
+    margin-top: 4px;
+    line-height: 1.5;
+  }
+  .menu-row .du {
+    font-size: 11.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .menu-row .px {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 21px;
+    color: var(--accent);
+    min-width: 90px;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  /* ─── GALERIE (masonry) ─── */
+  .gallery-masonry {
+    columns: 3;
+    column-gap: 16px;
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+  .gallery-masonry .ph {
+    break-inside: avoid;
+    margin-bottom: 16px;
+    border-radius: 16px;
+    background: var(--paper);
+  }
+  .gallery-masonry .ph:nth-child(1) { aspect-ratio: 3/4; }
+  .gallery-masonry .ph:nth-child(2) { aspect-ratio: 4/5; }
+  .gallery-masonry .ph:nth-child(3) { aspect-ratio: 1/1; }
+  .gallery-masonry .ph:nth-child(4) { aspect-ratio: 4/5; }
+  .gallery-masonry .ph:nth-child(5) { aspect-ratio: 3/4; }
+  .gallery-masonry .ph:nth-child(6) { aspect-ratio: 1/1; }
+  .gallery-masonry .ph:nth-child(7) { aspect-ratio: 4/5; }
+  .gallery-masonry .ph:nth-child(8) { aspect-ratio: 3/4; }
+  .gallery-masonry .ph:nth-child(9) { aspect-ratio: 1/1; }
+
+  .gallery-foot {
+    max-width: 1180px;
+    margin: 40px auto 0;
+    text-align: center;
+    font-size: 13px;
+    color: var(--ink-2);
+  }
+  .gallery-foot a {
+    color: var(--ink);
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 1px;
+    font-weight: 500;
+  }
+  .gallery-foot a:hover { color: var(--accent); }
+
+  /* ─── AVIS ─── */
+  .testimonials-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  .testimonial {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 20px;
+    padding: 32px;
+  }
+  .testimonial .stars { color: var(--accent); font-size: 13px; letter-spacing: 0.15em; margin-bottom: 14px; }
+  .testimonial blockquote {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.4;
+    color: var(--ink);
+    margin-bottom: 18px;
+  }
+  .testimonial .by {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 500;
+  }
+  .testimonial .by b { color: var(--ink); font-weight: 600; }
+
+  .rating-block {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--ink-2);
+  }
+  .rating-block .num {
+    font-family: var(--serif);
+    font-size: 48px;
+    color: var(--ink);
+    line-height: 1;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .rating-block .stars { color: var(--accent); font-size: 14px; letter-spacing: 0.15em; }
+  .rating-block a { color: var(--ink); border-bottom: 1px solid var(--accent); padding-bottom: 1px; font-weight: 500; }
+
+  /* ─── RÉSERVATION ─── */
+  .reserve-band {
+    background: var(--paper-3);
+    padding: 96px 40px;
+  }
+  .reserve-grid {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 64px;
+    align-items: start;
+  }
+  .reserve-grid .intro h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(2.4rem, 4.4vw, 3.6rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 18px;
+  }
+  .reserve-grid .intro h2 em { font-style: italic; color: var(--accent-deep); }
+  .reserve-grid .intro .eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent-deep);
+    font-weight: 600;
+    margin-bottom: 16px;
+    padding: 8px 18px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 999px;
+  }
+  .reserve-grid .intro p {
+    color: var(--ink-2);
+    font-size: 16.5px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+  }
+  .reserve-grid .quick-contact {
+    background: rgba(255,255,255,0.6);
+    border-radius: 16px;
+    padding: 20px 24px;
+    border: 1px solid rgba(255,255,255,0.8);
+  }
+  .reserve-grid .quick-contact .row {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 16px;
+    padding: 8px 0;
+    font-size: 14px;
+    align-items: baseline;
+  }
+  .reserve-grid .quick-contact .row + .row { border-top: 1px solid rgba(42,30,24,0.08); }
+  .reserve-grid .quick-contact .k {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 500;
+  }
+  .reserve-grid .quick-contact .v { color: var(--ink); font-weight: 500; }
+  .reserve-grid .quick-contact .v a { border-bottom: 1px solid var(--accent); }
+
+  .form-card {
+    background: var(--paper);
+    border-radius: 24px;
+    padding: 36px;
+    border: 1px solid var(--rule);
+  }
+  .selected-bar {
+    display: none;
+    background: var(--paper-2);
+    border-left: 3px solid var(--accent);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: var(--ink);
+  }
+  .selected-bar.is-on { display: block; }
+  .selected-bar .label {
+    display: block;
+    font-size: 10.5px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .selected-bar em { font-style: italic; color: var(--ink-2); font-weight: 400; }
+
+  .field { margin-bottom: 18px; }
+  .field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .field label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .field input,
+  .field select,
+  .field textarea {
+    width: 100%;
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-family: var(--sans);
+    font-size: 15px;
+    color: var(--ink);
+    outline: none;
+    transition: border-color 180ms, background 180ms;
+  }
+  .field input::placeholder, .field textarea::placeholder { color: var(--ink-3); opacity: 0.7; }
+  .field input:focus,
+  .field select:focus,
+  .field textarea:focus { border-color: var(--accent); background: var(--paper); }
+  .field input:disabled, .field select:disabled { opacity: 0.5; cursor: not-allowed; }
+  .field textarea { resize: vertical; min-height: 80px; }
+  .field select { cursor: pointer; appearance: none; -webkit-appearance: none; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' stroke='%23B26554' stroke-width='1.5' fill='none' stroke-linecap='round'/></svg>"); background-repeat: no-repeat; background-position: right 14px center; background-size: 12px; padding-right: 36px; }
+
+  .submit-btn {
+    width: 100%;
+    margin-top: 8px;
+    padding: 16px;
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    border-radius: 999px;
+    font-family: var(--sans);
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 200ms;
+  }
+  .submit-btn:hover { background: var(--accent); }
+  .form-note {
+    margin-top: 14px;
+    font-size: 12.5px;
+    color: var(--ink-3);
+    text-align: center;
+    font-style: italic;
+    font-family: var(--serif);
+  }
+  .form-error {
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--accent);
+    text-align: center;
+    min-height: 18px;
+  }
+  .submit-btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
+  .slot-unavailable { color: var(--ink-3); font-style: italic; }
+  .success { display: none; text-align: center; padding: 16px 0; }
+  .success.is-on { display: block; }
+  .success h3 {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  .success p { font-size: 15px; color: var(--ink-2); line-height: 1.65; }
+
+  /* ─── INFOS ─── */
+  .infos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  .info {
+    background: var(--paper);
+    border-radius: 20px;
+    border: 1px solid var(--rule);
+    padding: 32px;
+  }
+  .info h3 {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 24px;
+    margin-bottom: 18px;
+    color: var(--accent);
+    font-weight: 400;
+  }
+  .info .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--rule);
+    font-size: 14px;
+  }
+  .info .row:last-child { border-bottom: none; }
+  .info .row .k { color: var(--ink-3); font-size: 12px; letter-spacing: 0.02em; }
+  .info .row .v { color: var(--ink); font-weight: 500; text-align: right; }
+  .info .row .v a { border-bottom: 1px solid var(--accent); padding-bottom: 1px; }
+  .info .row.closed .v { color: var(--accent); font-style: italic; font-family: var(--serif); font-weight: 400; }
+
+  /* ─── FOOTER ─── */
+  footer.site {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 36px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  footer.site .logo {
+    color: var(--paper);
+    font-size: 22px;
+  }
+  footer.site .logo em { color: var(--accent-soft); }
+  footer.site .links {
+    display: flex; gap: 24px;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: rgba(255,255,255,0.55);
+  }
+  footer.site .links a { transition: color 200ms; }
+  footer.site .links a:hover { color: var(--accent-soft); }
+  footer.site .copy {
+    font-size: 11px;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  /* ─── TOAST ─── */
+  .toast {
+    position: fixed; bottom: 24px; right: 24px;
+    background: var(--ink); color: var(--paper);
+    padding: 14px 20px;
+    border-radius: 12px;
+    font-size: 13.5px;
+    z-index: 999;
+    transform: translateY(100px); opacity: 0;
+    transition: all 350ms ease;
+    border-left: 3px solid var(--accent);
+  }
+  .toast.show { transform: translateY(0); opacity: 1; }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 980px) {
+    nav.site { padding: 14px 20px; flex-wrap: wrap; gap: 12px; }
+    nav.site ul { gap: 18px; order: 3; width: 100%; justify-content: center; }
+    .hero { padding: 64px 20px 72px; }
+    .hero .image-row { grid-template-columns: 1fr 1fr; margin-top: 40px; }
+    .hero .image-row .ph.c { display: none; }
+    section.block { padding: 72px 20px; }
+    .reserve-band { padding: 72px 20px; }
+    .about-band { grid-template-columns: 1fr; gap: 40px; }
+    .about-band .visual { aspect-ratio: 16/10; }
+    .pillars { grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+    .services { grid-template-columns: 1fr; }
+    .testimonials-wrap { grid-template-columns: 1fr; }
+    .infos { grid-template-columns: 1fr; }
+    .reserve-grid { grid-template-columns: 1fr; gap: 40px; }
+    .menu-row { grid-template-columns: 1fr auto; }
+    .menu-row .du { display: none; }
+    footer.site { flex-direction: column; padding: 28px 20px; align-items: flex-start; }
+  }
+  @media (max-width: 600px) {
+    .hero .image-row { grid-template-columns: 1fr; }
+    .hero .image-row .ph.a { display: none; }
+    .gallery-masonry { columns: 2; }
+    .pillars { grid-template-columns: 1fr; }
+    .form-card { padding: 24px; }
+    .field-row { grid-template-columns: 1fr; gap: 0; }
+  }
+  @media (max-width: 420px) {
+    .gallery-masonry { columns: 1; }
+  }
+
+  /* ─── HAMBURGER MOBILE ─── */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px;
+    background: none;
+    border: none;
+  }
+  .hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--ink);
+    border-radius: 2px;
+    transition: all 250ms;
+  }
+  .hamburger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.is-open span:nth-child(2) { opacity: 0; }
+  .hamburger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  @media (max-width: 980px) {
+    .hamburger { display: flex; }
+    nav.site ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0; right: 0;
+      background: rgba(251,242,236,0.98);
+      backdrop-filter: blur(12px);
+      flex-direction: column;
+      gap: 0;
+      padding: 8px 0 16px;
+      border-bottom: 1px solid var(--rule);
+      order: unset;
+      width: 100%;
+    }
+    nav.site ul.is-open { display: flex; }
+    nav.site ul li a { display: block; padding: 14px 24px; font-size: 15px; }
+    nav.site { position: sticky; top: 0; flex-wrap: nowrap; }
+  }
+
+</style>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+
+
+<!-- NAV -->
+<nav class="site">
+  <a href="#top" class="logo">
+    La Fille <em>de la Marquise</em>
+    <small>Onglerie · Le Houlme</small>
+  </a>
+  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <ul id="navMenu">
+    <li><a href="#atelier">L'atelier</a></li>
+    <li><a href="#prestations">Prestations</a></li>
+    <li><a href="#galerie">Galerie</a></li>
+    <li><a href="#avis">Avis</a></li>
+    <li><a href="#infos">Infos</a></li>
+  </ul>
+  <a class="btn-cta" href="#reservation">Réserver →</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <span class="eyebrow">Onglerie · Le Houlme · 76770</span>
+  <h1>L'art de sublimer <em>vos mains.</em></h1>
+  <p class="lede">Un atelier d'ongles ouvert sur rendez-vous, en Normandie. Vernis, gel, extensions, nail art — chaque détail compte.</p>
+  <div class="ctas">
+    <a class="btn-cta" href="#reservation">Prendre rendez-vous</a>
+    <a class="btn-ghost" href="#prestations">Voir les prestations</a>
+  </div>
+  <div class="image-row">
+    <div class="ph a" data-ph="atelier"></div>
+    <div class="ph b" data-ph="portrait"></div>
+    <div class="ph c" data-ph="détail"></div>
+  </div>
+</section>
+
+<!-- ATELIER -->
+<section class="block" id="atelier">
+  <div class="about-band">
+    <div class="ph visual" data-ph="atelier"></div>
+    <div class="copy">
+      <span class="eyebrow">L'atelier</span>
+      <h2>Un soin minutieux,<br>au bout des <em>doigts.</em></h2>
+      <p>L'Atelier La Fille de la Marquise est une onglerie de proximité, installée au cœur du Houlme. L'atelier vous accueille sur rendez-vous uniquement, dans un cadre discret pensé pour faire de chaque visite un véritable moment de détente.</p>
+      <p>Vernis semi-permanent, pose gel, extensions, manucure classique et nail art : chaque prestation est réalisée avec la même exigence — gestes précis, produits choisis, et un résultat qui dure.</p>
+      <div class="pillars">
+        <div class="pillar"><h4>Sur RDV</h4><p>Un seul créneau à la fois, sans précipitation.</p></div>
+        <div class="pillar"><h4>3 semaines</h4><p>Tenue garantie sur les poses gel et semi-permanent.</p></div>
+        <div class="pillar"><h4>Au Houlme</h4><p>Seine-Maritime, à quelques minutes de Rouen.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRESTATIONS — featured -->
+<section class="block alt" id="prestations">
+  <div class="head-center">
+    <p class="eyebrow">Prestations</p>
+    <h2>Soigner <em>vos ongles</em><br>du bout des doigts.</h2>
+    <p>Une sélection de prestations réalisées avec soin, de la pose la plus simple au nail art le plus précis. Cliquez sur une prestation pour la sélectionner.</p>
+    <div class="pills">
+      <span>Vernis</span><span>Pose gel</span><span>Extensions</span><span>Nail art</span><span>Manucure</span>
+    </div>
+  </div>
+
+  <div class="services">
+    <article class="service" data-service="Vernis semi-permanent — mains" data-duration="45 min" data-price="à partir de 35 €">
+      <div class="ph" data-ph="exemple"></div>
+      <h3>Vernis semi-permanent</h3>
+      <p>Mains ou pieds. Couleur pleine ou French — tenue impeccable.</p>
+      <div class="footer"><span class="du">45 min</span><span class="px">dès 35 €</span></div>
+    </article>
+    <article class="service" data-service="Pose gel" data-duration="1 h" data-price="55 €">
+      <div class="ph" data-ph="exemple"></div>
+      <h3>Pose gel</h3>
+      <p>Le grand classique. Tenue garantie trois semaines, brillance impeccable.</p>
+      <div class="footer"><span class="du">1 h</span><span class="px">55 €</span></div>
+    </article>
+    <article class="service" data-service="Extension résine / gel" data-duration="1 h 30 — 2 h" data-price="dès 70 €">
+      <div class="ph" data-ph="exemple"></div>
+      <h3>Extensions</h3>
+      <p>Forme et longueur sur mesure, en résine ou en gel.</p>
+      <div class="footer"><span class="du">1 h 30 — 2 h</span><span class="px">dès 70 €</span></div>
+    </article>
+  </div>
+</section>
+
+<!-- PRESTATIONS — full list -->
+<section class="block">
+  <div class="head-center">
+    <p class="eyebrow">Carnet complet</p>
+    <h2>Toutes les <em>prestations</em>.</h2>
+    <p>Tarifs indicatifs. Cliquez pour pré-renseigner votre demande de rendez-vous.</p>
+  </div>
+  <div class="menu-list" id="menuList">
+    <div class="menu-row" data-service="Vernis semi-permanent — mains" data-duration="45 min" data-price="à partir de 35 €">
+      <div class="name">Vernis semi-permanent · mains<small>Couleur pleine ou French.</small></div>
+      <span class="du">45 min</span><span class="px">35 €</span>
+    </div>
+    <div class="menu-row" data-service="Vernis semi-permanent — pieds" data-duration="45 min" data-price="à partir de 35 €">
+      <div class="name">Vernis semi-permanent · pieds<small>Soin et pose.</small></div>
+      <span class="du">45 min</span><span class="px">35 €</span>
+    </div>
+    <div class="menu-row" data-service="Pose gel" data-duration="1 h" data-price="55 €">
+      <div class="name">Pose gel<small>Tenue trois semaines.</small></div>
+      <span class="du">1 h</span><span class="px">55 €</span>
+    </div>
+    <div class="menu-row" data-service="Remplissage gel" data-duration="1 h" data-price="40 €">
+      <div class="name">Remplissage gel<small>Maintenance toutes les trois semaines.</small></div>
+      <span class="du">1 h</span><span class="px">40 €</span>
+    </div>
+    <div class="menu-row" data-service="Extension résine / gel" data-duration="1 h 30 — 2 h" data-price="dès 70 €">
+      <div class="name">Extension résine ou gel<small>Forme et longueur sur mesure.</small></div>
+      <span class="du">1 h 30 — 2 h</span><span class="px">dès 70 €</span>
+    </div>
+    <div class="menu-row" data-service="Forfait Mains + Pieds" data-duration="1 h 30" data-price="60 €">
+      <div class="name">Forfait Mains + Pieds<small>Remplissage gel mains + semi-perma pieds.</small></div>
+      <span class="du">1 h 30</span><span class="px">60 €</span>
+    </div>
+    <div class="menu-row" data-service="Manucure classique" data-duration="30 min" data-price="20 €">
+      <div class="name">Manucure classique<small>Soin et vernis classique.</small></div>
+      <span class="du">30 min</span><span class="px">20 €</span>
+    </div>
+    <div class="menu-row" data-service="Dépose seule" data-duration="20 min" data-price="15 €">
+      <div class="name">Dépose seule<small>Soigneuse, respectueuse de l'ongle naturel.</small></div>
+      <span class="du">20 min</span><span class="px">15 €</span>
+    </div>
+    <div class="menu-row" data-service="Nail art &amp; décorations" data-duration="Variable" data-price="dès 5 € / ongle">
+      <div class="name">Nail art &amp; décorations<small>Strass, dégradés, motifs.</small></div>
+      <span class="du">variable</span><span class="px">dès 5 €</span>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIE -->
+<section class="block alt" id="galerie">
+  <div class="head-center">
+    <p class="eyebrow">Galerie</p>
+    <h2>Quelques <em>réalisations.</em></h2>
+    <p>Un aperçu de styles, de couleurs et de finitions, pour vous inspirer avant votre rendez-vous.</p>
+  </div>
+  <div class="gallery-masonry">
+    <div class="ph" data-ph="French moderne"></div>
+    <div class="ph" data-ph="Chromé"></div>
+    <div class="ph" data-ph="Baby boomer"></div>
+    <div class="ph" data-ph="Marbré"></div>
+    <div class="ph" data-ph="Strass mariage"></div>
+    <div class="ph" data-ph="Nail art floral"></div>
+    <div class="ph" data-ph="Pastels d'été"></div>
+    <div class="ph" data-ph="Rouge mat"></div>
+    <div class="ph" data-ph="Bordeaux"></div>
+  </div>
+  <p class="gallery-foot">Voir plus de réalisations sur <a href="https://www.instagram.com/lafilledelamarquise_ongles" target="_blank" rel="noopener">Instagram @lafilledelamarquise_ongles →</a></p>
+</section>
+
+<!-- AVIS -->
+<section class="block" id="avis">
+  <div class="head-center">
+    <p class="eyebrow">Avis · 5,0 / 5 sur Google</p>
+    <h2>Ce qu'elles <em>en disent.</em></h2>
+  </div>
+  <div class="testimonials-wrap">
+    <article class="testimonial">
+      <div class="stars">★ ★ ★ ★ ★</div>
+      <blockquote>Toujours un moment très agréable. Précision incroyable, tenue parfaite, même avec les mains dans l'eau toute la journée.</blockquote>
+      <div class="by"><b>Aimie G.</b> · il y a 2 mois</div>
+    </article>
+    <article class="testimonial">
+      <div class="stars">★ ★ ★ ★ ★</div>
+      <blockquote>Un vrai moment de détente, dans un cadre calme et apaisant. À l'écoute, professionnelle, travail minutieux.</blockquote>
+      <div class="by"><b>Cyrielle V.</b> · il y a 3 mois</div>
+    </article>
+    <article class="testimonial">
+      <div class="stars">★ ★ ★ ★ ★</div>
+      <blockquote>J'ai pris l'habitude d'une jolie manucure — qui me vaut souvent des compliments — et je viens désormais tous les mois.</blockquote>
+      <div class="by"><b>Charlotte G.</b> · il y a 3 mois</div>
+    </article>
+  </div>
+  <div class="rating-block">
+    <span class="num">5,0</span>
+    <span class="stars">★ ★ ★ ★ ★</span><br>
+    <a href="https://www.google.com/search?q=Atelier+La+fille+de+la+Marquise+ongles" target="_blank" rel="noopener" style="margin-top:10px; display:inline-block;">Voir tous les avis sur Google →</a>
+  </div>
+</section>
+
+<!-- RÉSERVATION -->
+<section class="reserve-band" id="reservation">
+  <div class="reserve-grid">
+    <div class="intro">
+      <span class="eyebrow">Réserver</span>
+      <h2>Réservez<br>votre <em>moment.</em></h2>
+      <p>Remplissez ce formulaire. Un email de confirmation vous est envoyé immédiatement et le rendez-vous est ajouté à notre agenda.</p>
+      <div class="quick-contact">
+        <div class="row"><span class="k">Téléphone</span><span class="v"><a href="tel:+33767866229">07 67 86 62 29</a></span></div>
+        <div class="row"><span class="k">Email</span><span class="v"><a href="mailto:contact@lafilledela-marquise.fr">contact@lafilledela-marquise.fr</a></span></div>
+        <div class="row"><span class="k">Adresse</span><span class="v">Le Houlme · 76770</span></div>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <div class="selected-bar" id="selectedBar">
+        <span class="label">Prestation sélectionnée</span>
+        <span id="selectedText"></span>
+      </div>
+      <form id="resaForm">
+        <div class="field-row">
+          <div class="field"><label>Prénom</label><input type="text" name="prenom" placeholder="Marie" required></div>
+          <div class="field"><label>Nom</label><input type="text" name="nom" placeholder="Dupont" required></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label>Téléphone</label><input type="tel" name="telephone" placeholder="06 __ __ __ __" required></div>
+          <div class="field"><label>Email</label><input type="email" name="email" placeholder="marie@email.fr" required></div>
+        </div>
+        <div class="field">
+          <label>Prestation souhaitée</label>
+          <select name="prestation" id="prestationSelect" required>
+            <option value="">— Choisir une prestation —</option>
+            <option>Vernis semi-permanent — mains</option>
+            <option>Vernis semi-permanent — pieds</option>
+            <option>Pose gel</option>
+            <option>Remplissage gel</option>
+            <option>Extension résine / gel</option>
+            <option>Forfait Mains + Pieds</option>
+            <option>Manucure classique</option>
+            <option>Dépose seule</option>
+            <option>Nail art &amp; décorations</option>
+          </select>
+        </div>
+        <div class="field-row">
+          <div class="field"><label>Date souhaitée</label><input type="date" name="date" id="dateInput" required></div>
+          <div class="field">
+            <label>Heure souhaitée</label>
+            <select name="creneau" id="creneauSelect" disabled>
+              <option value="">— Choisir d'abord une date —</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label>Message · précisions</label><textarea name="message" placeholder="Couleur, inspiration, longueur souhaitée…"></textarea></div>
+        <button type="submit" class="submit-btn" id="submitBtn">Confirmer ma réservation →</button>
+        <p class="form-note" id="formNote">Confirmation par email immédiate.</p>
+        <p id="formError" style="color:var(--accent);font-size:13px;text-align:center;min-height:18px;margin-top:6px;"></p>
+      </form>
+      <div class="success" id="successMsg">
+        <h3>Réservation confirmée !</h3>
+        <p>Un email de confirmation vient de vous être envoyé. À très bientôt à l'atelier ✨</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INFOS -->
+<section class="block" id="infos">
+  <div class="head-center">
+    <p class="eyebrow">Infos pratiques</p>
+    <h2>Horaires &amp; <em>contact.</em></h2>
+  </div>
+  <div class="infos">
+    <div class="info">
+      <h3>Horaires</h3>
+      <div class="row"><span class="k">Lundi</span><span class="v">9 h — 18 h</span></div>
+      <div class="row"><span class="k">Mardi</span><span class="v">9 h — 18 h</span></div>
+      <div class="row"><span class="k">Mercredi</span><span class="v">9 h — 18 h</span></div>
+      <div class="row"><span class="k">Jeudi</span><span class="v">9 h — 19 h</span></div>
+      <div class="row"><span class="k">Vendredi</span><span class="v">9 h — 19 h</span></div>
+      <div class="row"><span class="k">Samedi</span><span class="v">9 h — 17 h</span></div>
+      <div class="row closed"><span class="k">Dimanche</span><span class="v">fermé</span></div>
+    </div>
+    <div class="info">
+      <h3>Contact</h3>
+      <div class="row"><span class="k">Adresse</span><span class="v">Le Houlme · 76770</span></div>
+      <div class="row"><span class="k">Département</span><span class="v">Seine-Maritime</span></div>
+      <div class="row"><span class="k">Téléphone</span><span class="v"><a href="tel:+33767866229">07 67 86 62 29</a></span></div>
+      <div class="row"><span class="k">WhatsApp</span><span class="v">07 67 86 62 29</span></div>
+      <div class="row"><span class="k">Email</span><span class="v"><a href="mailto:contact@lafilledela-marquise.fr">contact@lafilledela-marquise.fr</a></span></div>
+      <div class="row"><span class="k">Instagram</span><span class="v"><a href="https://www.instagram.com/lafilledelamarquise_ongles" target="_blank" rel="noopener">@lafilledelamarquise</a></span></div>
+    </div>
+    <div class="info">
+      <h3>À savoir</h3>
+      <div class="row"><span class="k">Tenue garantie</span><span class="v">3 semaines</span></div>
+      <div class="row"><span class="k">Réservation</span><span class="v">Sur RDV</span></div>
+      <div class="row"><span class="k">Paiement</span><span class="v">CB · espèces</span></div>
+      <div class="row"><span class="k">Sans contact</span><span class="v">accepté</span></div>
+      <div class="row"><span class="k">Parking</span><span class="v">à proximité</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site">
+  <div class="logo">La Fille <em>de la Marquise</em></div>
+  <div class="links">
+    <a href="#atelier">L'atelier</a>
+    <a href="#prestations">Prestations</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#reservation">Réserver</a>
+  </div>
+  <div class="copy">© 2026 · Le Houlme · Normandie</div>
+</footer>
+
+<div class="toast" id="toast">✦ Réservation confirmée — email envoyé !</div>
+
+<script>
+  // ─── Service selection (works for cards + menu rows) ───
+  const allSelectable = document.querySelectorAll('[data-service]');
+  const sel  = document.getElementById('prestationSelect');
+  const bar  = document.getElementById('selectedBar');
+  const txt  = document.getElementById('selectedText');
+
+  function fillBar(el) {
+    const s = el.dataset.service;
+    const d = el.dataset.duration;
+    const p = el.dataset.price;
+    txt.innerHTML = `<strong>${s}</strong> <em>· ${d} · ${p}</em>`;
+    bar.classList.add('is-on');
+  }
+  function markSelected(el) {
+    allSelectable.forEach(x => x.classList.remove('is-selected'));
+    el.classList.add('is-selected');
+  }
+
+  allSelectable.forEach(el => {
+    el.addEventListener('click', () => {
+      markSelected(el);
+      sel.value = el.dataset.service;
+      fillBar(el);
+      setTimeout(() => document.getElementById('reservation').scrollIntoView({ behavior: 'smooth', block: 'start' }), 150);
+    });
+  });
+
+  sel.addEventListener('change', () => {
+    allSelectable.forEach(x => x.classList.remove('is-selected'));
+    if (!sel.value) { bar.classList.remove('is-on'); return; }
+    const match = Array.from(allSelectable).find(el => el.dataset.service === sel.value);
+    if (match) { match.classList.add('is-selected'); fillBar(match); }
+    else { txt.textContent = sel.value; bar.classList.add('is-on'); }
+  });
+
+  // ─── Date min = demain ───
+  const di = document.getElementById('dateInput');
+  const t = new Date(); t.setDate(t.getDate() + 1);
+  di.min = t.toISOString().split('T')[0];
+
+  // ════════════════════════════════════════════════════════
+  //  CONFIGURATION
+  // ════════════════════════════════════════════════════════
+  emailjs.init({ publicKey: 'taiezIIi9rYiAXbaZ' });
+
+  const HOURS = { 1:[9,18], 2:[9,18], 3:[9,18], 4:[9,19], 5:[9,19], 6:[9,17], 0:null };
+
+  const DURATIONS = {
+    'Vernis semi-permanent — mains': 45,
+    'Vernis semi-permanent — pieds': 45,
+    'Pose gel': 60,
+    'Remplissage gel': 60,
+    'Extension résine / gel': 105,
+    'Forfait Mains + Pieds': 90,
+    'Manucure classique': 30,
+    'Dépose seule': 20,
+    'Nail art & décorations': 60,
+  };
+
+  // ── Firebase Realtime Database ──
+  const FIREBASE_URL = 'https://la-fille-de-la-marquise-default-rtdb.europe-west1.firebasedatabase.app';
+
+  async function fetchBookings() {
+    const res  = await fetch(FIREBASE_URL + '/bookings.json');
+    if (!res.ok) throw new Error('Firebase ' + res.status);
+    const data = await res.json();
+    if (!data) return [];
+    return Object.values(data);
+  }
+
+  async function saveBooking(booking) {
+    const res = await fetch(FIREBASE_URL + '/bookings.json', {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:    JSON.stringify(booking)
+    });
+    if (!res.ok) throw new Error('Firebase save failed ' + res.status);
+  }
+
+  // ── Créneaux dynamiques avec disponibilité temps réel ──
+  const creneauSel = document.getElementById('creneauSelect');
+
+  async function refreshCreneaux() {
+    const dateStr = di.value;
+    creneauSel.innerHTML = '';
+    if (!dateStr) {
+      creneauSel.appendChild(new Option("— Choisir d'abord une date —", ''));
+      creneauSel.disabled = true;
+      return;
+    }
+    const d     = new Date(dateStr + 'T00:00');
+    const range = HOURS[d.getDay()];
+    if (!range) {
+      creneauSel.appendChild(new Option('Atelier fermé ce jour-là', ''));
+      creneauSel.disabled = true;
+      return;
+    }
+
+    creneauSel.disabled = true;
+    creneauSel.innerHTML = '';
+    creneauSel.appendChild(new Option('Chargement des disponibilités…', ''));
+
+    // Récupère les créneaux déjà pris depuis Firebase
+    let takenSlots = [];
+    try {
+      const bookings = await fetchBookings();
+      takenSlots = bookings
+        .filter(b => b.date === dateStr)
+        .map(b => b.creneau);
+    } catch(e) {
+      console.warn('Firebase indisponible, affichage sans filtre:', e);
+    }
+
+    creneauSel.innerHTML = '';
+    creneauSel.appendChild(new Option('— Choisir un horaire —', ''));
+
+    for (let h = range[0]; h < range[1]; h++) {
+      const hh = String(h).padStart(2, '0');
+      ['00', '30'].forEach(mm => {
+        const val   = hh + ':' + mm;
+        const label = hh + ' h ' + mm;
+        if (takenSlots.includes(val)) {
+          const opt = new Option(label + ' — indisponible', '');
+          opt.disabled  = true;
+          opt.style.color = '#9F8979';
+          creneauSel.appendChild(opt);
+        } else {
+          creneauSel.appendChild(new Option(label, val));
+        }
+      });
+    }
+    creneauSel.disabled = false;
+  }
+
+  di.addEventListener('change', refreshCreneaux);
+
+  // ── Formulaire & envoi ──
+  const form      = document.getElementById('resaForm');
+  const succ      = document.getElementById('successMsg');
+  const toast     = document.getElementById('toast');
+  const submitBtn = document.getElementById('submitBtn');
+  const formError = document.getElementById('formError');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    formError.textContent = '';
+
+    const creneau = creneauSel.value;
+    if (!creneau) {
+      creneauSel.style.borderColor = 'var(--accent)';
+      setTimeout(() => creneauSel.style.borderColor = '', 2000);
+      return;
+    }
+
+    const prenom     = form.prenom.value.trim();
+    const nom        = form.nom.value.trim();
+    const telephone  = form.telephone.value.trim();
+    const email      = form.email.value.trim();
+    const prestation = form.prestation.value;
+    const dateVal    = form.date.value;
+    const message    = form.message.value.trim();
+
+    submitBtn.disabled    = true;
+    submitBtn.textContent = 'Vérification du créneau…';
+
+    try {
+      // ── Vérifie en temps réel que le créneau est encore libre ──
+      try {
+        const bookings = await fetchBookings();
+        const alreadyTaken = bookings.some(b => b.date === dateVal && b.creneau === creneau);
+        if (alreadyTaken) {
+          formError.textContent = 'Ce créneau vient d’être réservé. Veuillez en choisir un autre.';
+          submitBtn.disabled    = false;
+          submitBtn.textContent = 'Confirmer ma réservation →';
+          await refreshCreneaux();
+          return;
+        }
+      } catch(e) {
+        console.warn('Vérification doublon ignorée:', e);
+      }
+
+      submitBtn.textContent = 'Envoi en cours…';
+
+      // ── Formate la date en français ──
+      const dateObj   = new Date(dateVal + 'T00:00');
+      const dateFR    = dateObj.toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+      const creneauFR = creneau.replace(':', 'h');
+
+      // ── Lien Google Calendar pour la gérante ──
+      const dureeMin  = DURATIONS[prestation] || 60;
+      const dateStart = new Date(dateVal + 'T' + creneau + ':00');
+      const dateEnd   = new Date(dateStart.getTime() + dureeMin * 60 * 1000);
+      function toGCal(dt) {
+        return dt.getFullYear()
+          + String(dt.getMonth()+1).padStart(2,'0')
+          + String(dt.getDate()).padStart(2,'0')
+          + 'T' + String(dt.getHours()).padStart(2,'0')
+          + String(dt.getMinutes()).padStart(2,'0') + '00';
+      }
+      const gcalParams = new URLSearchParams({
+        action: 'TEMPLATE',
+        text:   'RDV - ' + prestation + ' - ' + prenom + ' ' + nom,
+        dates:  toGCal(dateStart) + '/' + toGCal(dateEnd),
+        details: 'Prestation : ' + prestation + '\nCliente : ' + prenom + ' ' + nom + '\nTel : ' + telephone + '\nEmail : ' + email + (message ? '\nMessage : ' + message : ''),
+        location: 'Atelier La Fille de la Marquise, Le Houlme 76770',
+      });
+      const gcalLink = 'https://calendar.google.com/calendar/render?' + gcalParams.toString();
+
+      const templateParams = {
+        prenom, nom, telephone, email, prestation,
+        date: dateFR, creneau: creneauFR,
+        message: message || 'Aucun message',
+        gcal_link: gcalLink,
+        to_email: email,
+        to_name: prenom + ' ' + nom,
+        atelier_email: 'emiletaraud942@gmail.com',
+      };
+
+      // ── Envoie les emails ──
+      await emailjs.send('service_cil72h9', 'template_w6j55lz', templateParams);
+      await emailjs.send('service_cil72h9', 'template_2oqhkuu', {
+        ...templateParams,
+        to_email: 'emiletaraud942@gmail.com',
+        to_name: 'Atelier La Fille de la Marquise',
+      });
+
+      // ── Sauvegarde le créneau dans Firebase ──
+      try {
+        await saveBooking({ date: dateVal, creneau, prenom, nom, telephone, email, prestation, createdAt: new Date().toISOString() });
+      } catch(e) {
+        console.warn('Sauvegarde créneau échouée:', e);
+      }
+
+      // ── Succès ──
+      form.style.display = 'none';
+      bar.style.display  = 'none';
+      succ.classList.add('is-on');
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 6000);
+
+    } catch (err) {
+      console.error(err);
+      formError.textContent = 'Une erreur est survenue. Appelez le 07 67 86 62 29.';
+      submitBtn.disabled    = false;
+      submitBtn.textContent = 'Confirmer ma réservation →';
+    }
+  });
+
+    // ─── Hamburger menu ───
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('navMenu');
+  if (hamburger && navMenu) {
+    hamburger.addEventListener('click', () => {
+      const open = navMenu.classList.toggle('is-open');
+      hamburger.classList.toggle('is-open', open);
+      hamburger.setAttribute('aria-expanded', open);
+    });
+    navMenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navMenu.classList.remove('is-open');
+        hamburger.classList.remove('is-open');
+        hamburger.setAttribute('aria-expanded', false);
+      });
+    });
+  }
+
+</script>
+
+<!-- Atelier La Fille de la Marquise — EmailJS + Google Calendar -->
+</body>
+</html>
